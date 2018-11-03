@@ -1,6 +1,8 @@
-# Welcome
+# Welcome to Rails Neutrino!
 
-This app was created with the aid of Docusaurus Neutrino, which automatically creates a new Docusaurus app from scratch.  It's like Rails Neutrino but for Docusaurus instead.
+[![Build Status](https://semaphoreci.com/api/v1/jhsu802701/rails-neutrino-docu/branches/master/badge.svg)](https://semaphoreci.com/jhsu802701/rails-neutrino-docu)
+
+This repository contains the source code used for the [Rails Neutrino](https://www.railsneutrino.com/) web site.
 
 ## Scripts
 * all.sh: This script runs test_app.sh and test_code.sh.
