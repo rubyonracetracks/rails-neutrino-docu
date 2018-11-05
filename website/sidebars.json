@@ -1,7 +1,6 @@
 {
   "docs": {
-    "Tutorial": ["chapter01"],
-    "First Category": ["doc2"]
+    "Tutorial": ["chapter01", "chapter02"]
   },
   "docs-other": {
     "First Category": ["doc5"]
