@@ -9,9 +9,9 @@
 // site configuration options.
 
 const siteConfig = {
-  title: 'Test Site', // Title for your website.
-  tagline: 'A website for testing',
-  url: 'https://your-docusaurus-test-site.com', // Your website URL
+  title: 'Rails Neutrino', // Title for your website.
+  tagline: 'Automatically create a high-quality Rails app from scratch in MINUTES!',
+  url: 'https://www.railsneutrino.com/', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
