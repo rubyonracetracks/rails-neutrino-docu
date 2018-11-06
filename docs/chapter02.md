@@ -12,7 +12,7 @@ git clone https://gitlab.com/rubyonracetracks/rails_neutrino_5.git
 cd rails_neutrino_5
 sh short.sh
 ```
-* The process of generating a new Rails app will begin.  Your new app will be ready in a few minutes.
+* Enter your Git username and name when asked.  Once you are finished, the process of generating a new Rails app will begin.  Your new app will be ready in a few minutes.
 * This short version of the Rails Neutrino script skips the process of running the Annotate gem at each step.  Saving time is handy when developing or maintaining Rails Neutrino.
 
 ## Follow Up
