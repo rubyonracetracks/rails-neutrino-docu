@@ -27,6 +27,7 @@ heroku rename $HEROKU_TMP # Renames the Heroku app
 * In your browser, visit your new URL. You will again see the initial Heroku splash screen.
 * To see which Heroku project you are currently configured to push to, enter the command "git remote -v".
 * Deploy your app by entering the command "sh heroku.sh".
+* When the deployment process has finished, refresh the browser tab that has your app's Heroku URL.  Now your app has replaced the Heroku splash screen.
 * Enter the following commands:
 ```
 git add .
@@ -34,4 +35,3 @@ git commit -m "Configured for Heroku"
 git push origin master
 ```
 * Enter the command "sh heroku.sh".
-* In your web browser, refresh the tab with your app's Heroku URL.  Now your app has replaced the Heroku splash screen.
