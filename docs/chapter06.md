@@ -10,7 +10,7 @@ In this chapter, you will add a Travis CI badge to your source code.  This lets 
 * Go the [Travis CI](https://travis-ci.org/) web site.  Sign up if you have not already done so.
 * Select your new Rails app as one to be monitored.
 
-## Travis Configuration File
+## Travis Configuration
 * Enter the following commands in your local terminal within your app's root directory:
 ```
 touch .travis.yml
@@ -45,6 +45,7 @@ before_install:
 before_script:
   - psql -c 'create database travis_ci_test;' -U postgres
   - cp config/database.yml.travis config/database.yml
+  - bundle install
   - bundle exec rake db:migrate
 
 ```
