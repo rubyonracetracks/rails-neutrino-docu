@@ -34,20 +34,21 @@ services:
 env:
   - TEST_DATABASE_USERNAME=postgres
 
-bundler_args: --without development production --deployment --jobs=3 --retry=3
-
 cache: bundler
 
 before_install:
  - gem update --system
- - gem install bundler
- 
+ - gem install bundler --no-document
+
 before_script:
   - psql -c 'create database travis_ci_test;' -U postgres
   - cp config/database.yml.travis config/database.yml
-  - bundle install
   - bundle exec rake db:migrate
 
+script:
+  - bundle exec rake test
+  - bundle exec rake rubocop -D
+  - bundle exec rails_best_practices .
 ```
 * In your local terminal, enter the command "ruby -v" to see which version of Ruby you are using.
 * In the .travis.yml file, replace "x.y.z" with the version number of Ruby in use.  (Omit the "p" and everything that comes after it.)
