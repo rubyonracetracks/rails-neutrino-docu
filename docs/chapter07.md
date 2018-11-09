@@ -31,7 +31,7 @@ SimpleCov.formatter = SimpleCov::Formatter::Codecov
 * In the test/test_helper.rb file, update the "minitest-reporters" section.  In the Travis CI environment, Codecov conflicts with the Minitest Reporters and leads to an uninitialized constant error and a failed build.  You must disable Minitest Reporters in the Travis environment.  Edit the test/test_helper.rb file and make the following change:
 ```
 if ENV['CODECOV_TOKEN'].nil?
-  # All source code in the "minitest-reporters" goes here.
+  # All source code in the "minitest-reporters" section goes here.
 end
 ```
 * Enter the command "sh git_check.sh".  All tests should pass, and there should be no offenses.
