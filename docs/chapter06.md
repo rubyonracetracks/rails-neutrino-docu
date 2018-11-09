@@ -47,7 +47,7 @@ before_script:
 
 script:
   - bundle exec rake test
-  - bundle exec rake rubocop -D
+  - bundle exec rubocop -D
   - bundle exec rails_best_practices .
 ```
 * In your local terminal, enter the command "ruby -v" to see which version of Ruby you are using.
@@ -62,7 +62,7 @@ git push origin master
 ## Running Travis CI
 * Go back to the Travis CI site.  Travis CI will test your app.  This will take a few minutes.  Subsequent Travis builds will be faster, because you have configured Travis to cache the gems installed with the "bundle install" command.
 * If all goes well, all tests will pass.
-* Add the Markdown code for the Travis status badge to the README.md file just after the top heading.
+* Add the Markdown code for the Travis status badge to the badges section at the beginning of the README.md file.
 * To commit the Travis CI badge to the source code, enter the following commands:
 ```
 git add .
