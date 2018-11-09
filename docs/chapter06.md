@@ -8,7 +8,7 @@ In this chapter, you will add a Travis CI badge to your source code.  This lets 
 
 ## Entering Your App on the Travis CI Web Site
 * Go the [Travis CI](https://travis-ci.org/) web site.  Sign up if you have not already done so.
-* Select your new Rails app as one to be monitored.
+* Select your new Rails app as one to be monitored.  You may need to sync your account in order to show your newest GitHub repositories.
 
 ## Travis Configuration
 * Enter the following commands in your local terminal within your app's root directory:
