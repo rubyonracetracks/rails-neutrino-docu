@@ -13,7 +13,7 @@ In this chapter, you will add a Codecov Test Coverage CI badge to your source co
 * Go back to the [Travis CI](https://travis-ci.org/) web site.  Add the environment variable "CODECOV_TOKEN", and set it to the value provided by Codecov.  In the interest of security, do NOT set the option to display its value in the build log.
 
 ## Updating the Gemfile
-* In the test coverage section, add the following line:
+* In the "test coverage" section of the Gemfile, add the following line:
 ```
 gem 'codecov', require: false, group: :test
 ```
@@ -27,6 +27,12 @@ gem 'codecov', require: false, group: :test
 require 'codecov'
 SimpleCov.formatter = SimpleCov::Formatter::Codecov
 # END: codecov
+```
+* In the test/test_helper.rb file, update the "minitest-reporters" section.  In the Travis CI environment, Codecov conflicts with the Minitest Reporters and leads to an uninitialized constant error and a failed build.  You must disable Minitest Reporters in the Travis environment.  Edit the test/test_helper.rb file and make the following change:
+```
+if ENV['CODECOV_TOKEN'].nil?
+  # All source code in the "minitest-reporters" goes here.
+end
 ```
 * Enter the command "sh git_check.sh".  All tests should pass, and there should be no offenses.
 * Enter the following commands:
