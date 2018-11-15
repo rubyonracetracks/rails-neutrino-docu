@@ -17,4 +17,11 @@ sh short.sh
 
 ## Follow Up
 * In a terminal window, enter the command "tmux".
-* Enter your new app's root directory and enter the command "sh neutrino.sh; sh server.sh".  This runs all the tests and then starts up your app in the local Rails server.  If all goes well, there are no test failures or offenses.  After the tests have been completed, the Rails server will run.  If all goes well, you will be able to view your app locally when you open your browser to the appropriate URL.  Please note that if you selected a non-zero port offset for your Docker container, the appropriate port number will be something different from 3000.
+* Enter your new app's root directory and enter the command "sh neutrino.sh; sh server.sh".  This runs all the tests and then starts up your app in the local Rails server.
+* If all goes well, there are no test failures or offenses, and you can view your app locally when you open your browser and visit the appropriate URL.  Please note that if you selected a non-zero port offset for your Docker container, the appropriate port number will be something different from 3000.
+
+## Editing the Rails Neutrino Source Code
+* There may be errors, test failures, or offenses.  Rails, RuboCop, and Rails Best Practices sometimes change.
+* Update the code in your new app to correct these issues, and enter the command "sh neutrino.sh" again.
+* When the errors, test failures, offenses, and other issues cited before are resolved, incorporate your corrections into the Rails Neutrino source code.
+* Run the short.sh script again.  If everything pans out, you are ready to Git add/commit/push your changes and move on to the next chapter.
