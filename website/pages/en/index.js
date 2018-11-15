@@ -97,56 +97,6 @@ const Block = props => (
   </Container>
 );
 
-const Features = () => (
-  <Block layout="fourColumn">
-    {[
-      {
-        content: 'This is the content of my feature',
-        imageAlign: 'top',
-        title: 'Feature One',
-      },
-      {
-        content: 'The content of my second feature',
-        imageAlign: 'top',
-        title: 'Feature Two',
-      },
-    ]}
-  </Block>
-);
-
-const FeatureCallout = () => (
-  <div
-    className="productShowcaseSection paddingBottom"
-    style={{textAlign: 'center'}}>
-    <h2>Feature Callout</h2>
-    <MarkdownBlock>These are features of this project</MarkdownBlock>
-  </div>
-);
-
-const LearnHow = () => (
-  <Block background="light">
-    {[
-      {
-        content: 'Talk about learning how to use this',
-        imageAlign: 'right',
-        title: 'Learn How',
-      },
-    ]}
-  </Block>
-);
-
-const TryOut = () => (
-  <Block id="try">
-    {[
-      {
-        content: 'Talk about trying this out',
-        imageAlign: 'left',
-        title: 'Try it Out',
-      },
-    ]}
-  </Block>
-);
-
 const Description = () => (
   <Block background="dark">
     {[
@@ -167,11 +117,12 @@ class Index extends React.Component {
       <div>
         <HomeSplash language={language} />
         <div className="mainContainer">
-          <Features />
-          <FeatureCallout />
-          <LearnHow />
-          <TryOut />
-          <Description />
+          <Container padding={['bottom', 'top']} background="dark">
+            <h2>Welcome to Rails Neutrino!</h2>
+              This is a <a href="http://www.rubyonracetracks.com/">Ruby on Racetracks</a> web site!
+              <br /><br />
+              Rails Neutrino AUTOMATICALLY builds a new Rails app from scratch.  This autopilot system starts off with the "rails new" command and then adds the features that I consider to be necessary for all or most new Rails apps.  In a matter of minutes, Rails Neutrino completes a long series of tasks that would take many hours to complete manually.
+          </Container>
         </div>
       </div>
     );
