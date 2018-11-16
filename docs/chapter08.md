@@ -37,7 +37,7 @@ git push origin master
 ## Codacy Code Quality Badge
 * Go to the [Codacy](https://www.codacy.com/) web site.  Sign up if you have not already done so.
 * Add your Rails app to the list of apps you want Codacy to review.
-* When the build is finished, your Codacy Code Quality badge will be ready.  Add the rouce code for it to the badge section in your app's README.md file.
+* When the build is finished, your Codacy Code Quality badge will be ready.  Add the source code for it to the badge section in your app's README.md file.
 * Enter the following commands:
 ```
 git add .
