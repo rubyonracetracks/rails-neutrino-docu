@@ -29,6 +29,7 @@ const siteConfig = {
     {doc: 'chapter00', label: 'Tutorial'},
     {page: 'git', label: 'Git'},
     {page: 'help', label: 'Help'},
+    {page: 'links', label: 'Links'},
   ],
 
   /* Colors for website */
