@@ -19,6 +19,7 @@ gem 'codecov', require: false, group: :test
 ```
 * Enter the command "bundle install".
 * Enter the command "gem list codecov" to see which version of codecov is installed.  Pin the codecov gem in the Gemfile.
+* Enter the command "bundle install".
 
 ## Updating the Test Helper File
 * In the test/test_helper.rb file, add the following lines immediately after the SimpleCov section:
