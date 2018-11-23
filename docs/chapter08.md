@@ -13,7 +13,7 @@ In this chapter, you will add additional badges.  The Hakiri badge warns of secu
 * When the scan is finished, you'll see 5 security warnings.
 * There are two warnings about cross-site scripting.  These pertain to the use of the email_munger gem (to make email addresses more difficult for bots to scrape).  Mark these as false positives.
 * There are two warnings about "dynamic render path".  These pertain to the user and admin index pages.  Mark these as false positives.
-* There's one more warning.  You'll take care of this in a moment.
+* There's one more warning.  You'll take care of this in a moment.  (NOTE: If following the Generic App Tutorial led you here, this fifth issue has already been taken care of for you.)
 * Add the source code for the Hakiri badge to the badge section in your app's README.md file.
 * Enter the following commands:
 ```
@@ -21,6 +21,7 @@ git add .
 git commit -m "Added the Hakiri badge"
 git push origin master
 ```
+* If following the Generic App Tutorial led you here, your Hakiri badge should show no issues at this point.  Skip ahead to the "CodeClimate Maintainability Badge" section.
 * The Hakiri badge should now appear on the README.md page of the source code.  There is still one critical security warning that has not been addressed yet.
 * The one remaining issue is that the Cross-Site Request Forgery in app/controllers/application_controller.rb.  To correct it, edit the file app/controllers/application_controller.rb and add the following line just after the line "class ApplicationController < ActionController::Base":
 ```
