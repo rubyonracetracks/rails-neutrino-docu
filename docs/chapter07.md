@@ -12,6 +12,13 @@ In this chapter, you will add a Codecov Test Coverage CI badge to your source co
 * Codecov gives you a repo token.  This is used in your continuous integration build app to send its test coverage results to the Codecov service so that it can produce a test coverage badge.
 * Go back to the [Travis CI](https://travis-ci.org/) web site.  Add the environment variable "CODECOV_TOKEN", and set it to the value provided by Codecov.  In the interest of security, do NOT set the option to display its value in the build log.
 
+## Generic App Users
+
+If the Generic App Tutorial sent you here, follow these steps:
+* Go back to the [Travis CI](https://travis-ci.org/) web site and restart the build.
+* You can skip the "Updating the Gemfile" and the "Updating the Test Helper File" sections.  The changes listed here have already been done for you.
+* Skip ahead to the "Running CodeCov" section.
+
 ## Updating the Gemfile
 * In the "test coverage" section of the Gemfile, add the following line:
 ```
