@@ -30,7 +30,7 @@ git push origin master
 * Enter the following commands:
 ```
 git add .
-git commit -m "Resolved the Cross-Site Request Forgery"
+git commit -m "Addressed the Cross-Site Request Forgery"
 git push origin master
 ```
 * Now all security issues raised by Hakiri should be resolved.
