@@ -22,7 +22,7 @@ git commit -m "Added the Hakiri badge"
 git push origin master
 ```
 * If following the Generic App Tutorial led you here, your Hakiri badge should show no issues at this point.  Skip ahead to the "CodeClimate Maintainability Badge" section.
-* The Hakiri badge should now appear on the README.md page of the source code.  There is still one critical security warning that has not been addressed yet.
+* The Hakiri badge should appear on the README.md page in GitHub.  You may need to refresh your web browser.  Please note that there is still one issue left to take care of.
 * The one remaining issue is that the Cross-Site Request Forgery in app/controllers/application_controller.rb.  To correct it, edit the file app/controllers/application_controller.rb and add the following line just after the line "class ApplicationController < ActionController::Base":
 ```
   protect_from_forgery with: :exception
@@ -34,6 +34,7 @@ git add .
 git commit -m "Addressed the Cross-Site Request Forgery issue"
 git push origin master
 ```
+* Enter the command "sh heroku.sh".
 * Now all security issues raised by Hakiri should be resolved.  Please note that it takes a moment for Hakiri to rescan your app.  You'll then have to refresh the GitHub page to see the updated Hakiri badge.
 
 
@@ -48,6 +49,9 @@ git add .
 git commit -m "Added the CodeClimate Maintainability badge"
 git push origin master
 ```
+* Enter the command "sh heroku.sh".
+* The CodeClimate Maintainability badge should appear on the README.md page in GitHub.  You may need to refresh your web browser.
+
 
 ## Codacy Code Quality Badge
 * Go to the [Codacy](https://www.codacy.com/) web site.  Sign up if you have not already done so.
@@ -59,3 +63,5 @@ git add .
 git commit -m "Added the Codacy Code Quality badge"
 git push origin master
 ```
+* Enter the command "sh heroku.sh".
+* The Codacy Code Quality badge should appear on the README.md page in GitHub.  You may need to refresh your web browser.
