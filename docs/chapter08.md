@@ -34,7 +34,7 @@ git add .
 git commit -m "Addressed the Cross-Site Request Forgery issue"
 git push origin master
 ```
-* Now all security issues raised by Hakiri should be resolved.
+* Now all security issues raised by Hakiri should be resolved.  Please note that it takes a moment for Hakiri to rescan your app.  You'll then have to refresh the GitHub page to see the updated Hakiri badge.
 
 
 ## CodeClimate Maintainability Badge
