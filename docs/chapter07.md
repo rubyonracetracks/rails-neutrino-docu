@@ -31,15 +31,20 @@ gem 'codecov', require: false, group: :test
 ## Updating the Test Helper File
 * In the test/test_helper.rb file, add the following lines immediately after the SimpleCov section:
 ```
-# BEGIN: codecov
+# BEGIN: Codecov
+# Run Codecov ONLY in Travis.
+# Running Codecov suppresses the display of the test coverage percentage
+# in the terminal screen output.
 if ENV.include? 'CODECOV_TOKEN'
   require 'codecov'
   SimpleCov.formatter = SimpleCov::Formatter::Codecov
 end
-# END: codecov
+# END: Codecov
 ```
 * In the test/test_helper.rb file, update the "minitest-reporters" section.  In the Travis CI environment, Codecov conflicts with the Minitest Reporters and leads to an uninitialized constant error and a failed build.  You must disable Minitest Reporters in the Travis environment.  Edit the test/test_helper.rb file and make the following change:
 ```
+# NOTE: Minitest Reporters is incompatible with CodeCov.
+# Thus, Minitest Reporters is disabled in Travis.
 if ENV['CODECOV_TOKEN'].nil?
   # All source code in the "minitest-reporters" section goes here.
 end
