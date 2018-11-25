@@ -67,4 +67,4 @@ git commit -m "Added the Codecov badge"
 git push origin master
 ```
 * Enter the command "sh heroku.sh".
-* The Travis CI badge should now appear on the README.md page of the source code.  (You may need to refresh your browser.)
+* The Travis CI badge should appear on the README.md page in GitHub.  You may need to refresh your web browser.
