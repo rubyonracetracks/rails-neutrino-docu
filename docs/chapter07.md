@@ -32,7 +32,7 @@ gem 'codecov', require: false, group: :test
 * In the test/test_helper.rb file, add the following lines immediately after the SimpleCov section:
 ```
 # BEGIN: Codecov
-# Run Codecov ONLY in Travis.
+# Run Codecov ONLY in continuous integration.
 # Running Codecov suppresses the display of the test coverage percentage
 # in the terminal screen output.
 if ENV.include? 'CODECOV_TOKEN'
