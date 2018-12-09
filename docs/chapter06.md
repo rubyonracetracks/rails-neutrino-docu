@@ -58,6 +58,7 @@ git add .
 git commit -m "Configured for Travis CI"
 git push origin master
 ```
+* Enter the command "sh heroku.sh".
 
 ## Running Travis CI
 * Go back to the Travis CI site.  Travis CI will test your app.  This will take a few minutes.  Subsequent Travis builds will be faster, because you have configured Travis to cache the gems installed with the "bundle install" command.
@@ -69,4 +70,5 @@ git add .
 git commit -m "Added the Travis CI badge"
 git push origin master
 ```
-* The Travis CI badge should now appear on the README.md page of the source code.
+* Enter the command "sh heroku.sh".
+* The Travis CI badge should appear on the README.md page in GitHub.  You may need to refresh your web browser.

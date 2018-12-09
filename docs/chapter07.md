@@ -12,6 +12,13 @@ In this chapter, you will add a Codecov Test Coverage CI badge to your source co
 * Codecov gives you a repo token.  This is used in your continuous integration build app to send its test coverage results to the Codecov service so that it can produce a test coverage badge.
 * Go back to the [Travis CI](https://travis-ci.org/) web site.  Add the environment variable "CODECOV_TOKEN", and set it to the value provided by Codecov.  In the interest of security, do NOT set the option to display its value in the build log.
 
+## Generic App Users
+
+If the Generic App Tutorial sent you here, follow these steps:
+* Go back to the [Travis CI](https://travis-ci.org/) web site and restart the build.
+* You can skip the "Updating the Gemfile" and the "Updating the Test Helper File" sections.  The changes listed here have already been done for you.
+* Skip ahead to the "Running CodeCov" section.
+
 ## Updating the Gemfile
 * In the "test coverage" section of the Gemfile, add the following line:
 ```
@@ -19,17 +26,25 @@ gem 'codecov', require: false, group: :test
 ```
 * Enter the command "bundle install".
 * Enter the command "gem list codecov" to see which version of codecov is installed.  Pin the codecov gem in the Gemfile.
+* Enter the command "bundle install".
 
 ## Updating the Test Helper File
 * In the test/test_helper.rb file, add the following lines immediately after the SimpleCov section:
 ```
-# BEGIN: codecov
-require 'codecov'
-SimpleCov.formatter = SimpleCov::Formatter::Codecov
-# END: codecov
+# BEGIN: Codecov
+# Run Codecov ONLY in continuous integration.
+# Running Codecov suppresses the display of the test coverage percentage
+# in the terminal screen output.
+if ENV.include? 'CODECOV_TOKEN'
+  require 'codecov'
+  SimpleCov.formatter = SimpleCov::Formatter::Codecov
+end
+# END: Codecov
 ```
 * In the test/test_helper.rb file, update the "minitest-reporters" section.  In the Travis CI environment, Codecov conflicts with the Minitest Reporters and leads to an uninitialized constant error and a failed build.  You must disable Minitest Reporters in the Travis environment.  Edit the test/test_helper.rb file and make the following change:
 ```
+# NOTE: Minitest Reporters is incompatible with CodeCov.
+# Thus, Minitest Reporters is disabled in Travis.
 if ENV['CODECOV_TOKEN'].nil?
   # All source code in the "minitest-reporters" section goes here.
 end
@@ -51,4 +66,5 @@ git add .
 git commit -m "Added the Codecov badge"
 git push origin master
 ```
-* The Travis CI badge should now appear on the README.md page of the source code.
+* Enter the command "sh heroku.sh".
+* The Travis CI badge should appear on the README.md page in GitHub.  You may need to refresh your web browser.
