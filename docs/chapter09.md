@@ -7,7 +7,9 @@ sidebar_label: Chapter 9: Updating the Generic App Gem
 In this chapter, you will update the Generic App gem to use the Rails app you've been working on in this tutorial as the basis for generating all new Rails apps.  If you used the Generic App gem to create your Rails app, and following the instructions led you to this Rails Neutrino tutorial, this chapter is not relevant for you.
 
 ## Forking the Source Code
-Go to [https://bitbucket.org/rubyonracetracks/generic_app/src/master/](https://bitbucket.org/rubyonracetracks/generic_app/src/master/).
+* If you have already forked the source code for the Generic App gem, you may skip this section.
+* Go to [https://bitbucket.org/rubyonracetracks/generic_app/src/master/](https://bitbucket.org/rubyonracetracks/generic_app/src/master/).
+* Go to the left side of the screen, and click on the big "+" sign.  Select the option to fork this repository.
 
 ## Downloading the Source Code
 * Reset your Docker container.
