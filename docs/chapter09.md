@@ -4,7 +4,13 @@ title: Chapter 9: Updating the Generic App Gem
 sidebar_label: Chapter 9: Updating the Generic App Gem
 ---
 
-In this chapter, you will update the Generic App gem to use the Rails app you've been working on in this tutorial as the basis for generating all new Rails apps.  If you used the Generic App gem to create your Rails app, and following the instructions led you to this Rails Neutrino tutorial, this chapter is not relevant for you.
+In this chapter, you will update the Generic App gem to use the Rails app you've been working on in this tutorial as the basis for generating all new Rails apps.
+
+## Generic App Tutorial
+If the Generic App Tutorial sent you here, it's time to [return](https://www.genericapp.net/docs/chapter04).
+
+## Legacy Rails Apps
+If the Legacy Rails Apps site sent you here, it's time to [return](https://www.legacyrailsapps.com/docs/03-00.html).
 
 ## Forking the Source Code
 * If you have already forked the source code for the Generic App gem, you may skip this section.
