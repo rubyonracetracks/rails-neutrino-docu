@@ -26,7 +26,7 @@ class Git extends React.Component {
             </header>
             <ul>
               <li>Source code for creating new Rails apps: <a href="https://gitlab.com/rubyonracetracks/rails_neutrino_5/">https://gitlab.com/rubyonracetracks/rails_neutrino_5/</a></li>
-              <li>This site's source code: <a href="https://bitbucket.org/rubyonracetracks/rails-neutrino-docu/">https://bitbucket.org/rubyonracetracks/rails-neutrino-docu/</a></li>
+              <li>This site's source code: <a href="https://github.com/rubyonracetracks/rails-neutrino-docu">https://github.com/rubyonracetracks/rails-neutrino-docu</a></li>
             </ul>
           </div>
         </Container>
