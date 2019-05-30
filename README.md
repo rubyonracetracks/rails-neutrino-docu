@@ -1,6 +1,7 @@
 # Welcome to Rails Neutrino!
 
 [![Build Status](https://semaphoreci.com/api/v1/jhsu802701/rails-neutrino-docu/branches/master/badge.svg)](https://semaphoreci.com/jhsu802701/rails-neutrino-docu)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/51650aff-7aa5-4e21-9114-bb9484531303/deploy-status)](https://app.netlify.com/sites/rails-neutrino-docu/deploys)
 
 This repository contains the source code used for the [Rails Neutrino](https://www.railsneutrino.com/) web site.
 
