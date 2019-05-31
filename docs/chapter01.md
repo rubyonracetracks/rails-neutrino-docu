@@ -29,4 +29,4 @@ cd docker-debian-buster-use
 * You will be asked about your desired offset for the port numbers. Enter "10".
 * Enter the command "cd rvm-rails-general".
 * Enter the command "sh nuke.sh".  This clears out all Docker containers and images stored on your local machine.
-* Enter the command "sh download_new_image.sh".  This downloads the latest rvm-rails-general Docker image.  In a few minutes, you will be automatically logged in and ready to move on to the next chapter.
+* Enter the command "sh download_new_image.sh".  This downloads the latest rvm-rails-general Docker image.  In a few minutes, you will be automatically logged into the Docker container.  While you're waiting, you can get started on the next chapter.
