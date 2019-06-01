@@ -19,9 +19,8 @@ If the Legacy Rails Apps site sent you here, it's time to [return](https://www.l
 
 ## Downloading the Source Code
 * Reset your Docker container.
-  * In every tmux window you have opened to use the rails-general Docker image, enter the command "exit".
-  * Once you have closed every tmux window, enter the "exit" command again.  This takes you out of Docker and back into the host environment.
-  * Enter the command "sh reset.sh".  This resets your Docker container and automatically logs you back in.
+  * In every LXTerminal tab you have opened, exit the Docker container.  Close all but one tab.
+  * In the remaining LXTerminal tab, enter the command "sh reset.sh".  This resets your Docker container and automatically logs you back in.
 * Go to your fork of the Generic App source code on BitBucket.  Press the "Clone" button, and copy and paste the git clone command into your Docker container.
 * From the generic_app directory, enter the command "sh credentials.sh".  Enter your name and email address when prompted.
 

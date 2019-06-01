@@ -34,4 +34,4 @@ git add .
 git commit -m "Configured for Heroku"
 git push origin master
 ```
-* Enter the command "sh heroku.sh".
+* Enter the command "sh heroku.sh".  This pushes your changed source code to Heroku.

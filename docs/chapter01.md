@@ -13,7 +13,7 @@ In this chapter, you will give yourself a fresh start for this tutorial by delet
 ## What's the Point?
 * A fresh start guarantees that you don't get stopped by conflicts as a result of trying to use the same port for two or more different Docker containers.
 * A fresh start guarantees that you're using the latest Docker image with the latest version of Ruby and the latest versions of gems like rails, pg, nokogiri, and ffi.  While the latest versions of these gems will be installed if you don't already have them in your development environment, this takes time and slows you down.
-* Some of the steps in this chapter may be overkill.  However, I believe it's better to get a fresh start when it isn't necessary than to have problems as a result of trying to use Docker container settings that conflict with your pre-existing setup.
+* Some of the steps in this chapter may be overkill.  However, it's better to get a fresh start when it isn't necessary than to have problems as a result of trying to use Docker container settings that conflict with your pre-existing setup.
 
 ## Repository For Using the RVM Rails General Docker Image
 * If you still have the "rubyonracetracks" directory on your local machine as a result of going through the Different Docker Tutorial, delete it.

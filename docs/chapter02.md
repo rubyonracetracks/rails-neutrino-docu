@@ -46,4 +46,10 @@ git commit -m "Initial commit"
 ## Merge Request
 * Git add/commit/push your changes to the Rails Neutrino source code.
 * Submit your branch for editing the code as a merge request.
+
+## Reset the Docker Container
+* Stop the local Rails server.
+* Exit the Docker container from each terminal tab.
+* Close all the terminal tabs except one.
+* In the remaining terminal tab, enter the command "sh reset.sh" to reset the Docker container and log back in.
 * You are now ready to move on to the next chapter, where you will try out the long script.
