@@ -42,8 +42,14 @@ end
 # END: Codecov
 ```
 * In the test/test_helper.rb file, update the "minitest-reporters" section.  In the Travis CI environment, Codecov conflicts with the Minitest Reporters and leads to an uninitialized constant error and a failed build.  You must disable Minitest Reporters in the Travis environment.  Edit the test/test_helper.rb file and make the following changes:
-  * Replace the "NOTE" line with "# NOTE: Minitest Reporters is incompatible with GitLab CI and Codecov."
-  * Replace the "if" statement with "if ENV['GITLAB_CI'].nil? && ENV['CODECOV_TOKEN'].nil?".
+  * Replace the "NOTE" line with the following:
+  ```
+  # NOTE: Minitest Reporters is incompatible with GitLab CI and Codecov.
+  ```
+  * Replace the "if" line with the following:
+  ```
+  if ENV['GITLAB_CI'].nil? && ENV['CODECOV_TOKEN'].nil?
+  ```
 * Enter the command "sh git_check.sh".  All tests should pass, and there should be no offenses.
 * Enter the following commands:
 ```
