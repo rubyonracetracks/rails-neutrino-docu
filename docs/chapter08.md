@@ -4,7 +4,7 @@ title: Chapter 8: Other Badges
 sidebar_label: Chapter 8: Other Badges
 ---
 
-In this chapter, you will add additional badges.  The Hakiri badge warns of security vulnerabilities.  The CodeClimate and Codacy badges rate the quality of your app.
+In this chapter, you will add additional badges.  The Hakiri badge warns of security vulnerabilities.  The CodeClimate and CodeBeat badges rate the quality of your app.
 
 ## Hakiri Badge
 * Go to the [Hakiri](https://hakiri.io/) web site.  Sign up if you have not already done so.
@@ -53,15 +53,15 @@ git push origin master
 * The CodeClimate Maintainability badge should appear on the README.md page in GitHub.  You may need to refresh your web browser.
 
 
-## Codacy Code Quality Badge
-* Go to the [Codacy](https://www.codacy.com/) web site.  Sign up if you have not already done so.
-* Add your Rails app to the list of apps you want Codacy to review.
-* When the build is finished, your Codacy Code Quality badge will be ready.  Add the source code for it to the badge section in your app's README.md file.
+## CodeBeat Quality Badge
+* Go to the [CodeBeat](https://codebeat.co/) web site.  Sign up if you have not already done so.
+* Add your Rails app to the list of apps you want CodeBeat to review.
+* When the build is finished, your CodeBeat Code Quality badge will be ready.  Add the source code for it to the badge section in your app's README.md file.
 * Enter the following commands:
 ```
 git add .
-git commit -m "Added the Codacy Code Quality badge"
+git commit -m "Added the CodeBeat Code Quality badge"
 git push origin master
 ```
 * Enter the command "sh heroku.sh".
-* The Codacy Code Quality badge should appear on the README.md page in GitHub.  You may need to refresh your web browser.
+* The CodeBeat Code Quality badge should appear on the README.md page in GitHub.  You may need to refresh your web browser.
