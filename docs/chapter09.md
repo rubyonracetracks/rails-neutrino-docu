@@ -13,8 +13,8 @@ If the Generic App Tutorial sent you here, it's time to [return](https://www.gen
 If the Legacy Rails Apps site sent you here, it's time to [return](https://www.legacyrailsapps.com/docs/03-00.html).
 
 ## Forking the Source Code
-* If you have already forked the source code for the Generic App gem, you may skip this section.
 * Go to [https://bitbucket.org/rubyonracetracks/generic_app/src/master/](https://bitbucket.org/rubyonracetracks/generic_app/src/master/).
+* If you have already forked the source code for the Generic App gem, sync your fork to the upstream repository, and skip the rest of this section.
 * Go to the left side of the screen, and click on the big "+" sign.  Select the option to fork this repository.
 
 ## Downloading the Source Code
